@@ -16,4 +16,18 @@ Poza tym wyróżniamy także:
 
 ## Singleton 
 
-Wzorzec projektowy zapewniający istnienie co najwyżej jednej instancji danej klasy. Instancja ta musi być dostępna zewsząd. Sytuacje w których warto użyć wzorca Singleton to min.: Logger, Dziennik, Bufor, Obiekt ustawień, Obiekt łączenia z bazą danych. 
+Wzorzec projektowy zapewniający istnienie co najwyżej ustalonej z góry liczby instancji danej klasy. Instancja ta musi być dostępna zewsząd. Sytuacje w których warto użyć wzorca Singleton to min.: Logger, Dziennik, Bufor, Obiekt ustawień, Obiekt łączenia z bazą danych. 
+
+Plusy:
+- Łatowść implementacji
+- Brak zmian po stronie projektu
+- Stan singletonów jest globalny
+- Leniwe tworzenie instancji 
+
+Minusy:
+- Komplikacje przy wielowątkowości
+- Klasa singleton robi to musi ale dodatkowo też kontroluje swoje instancje
+- Może być trudny w testowaniu, a właściwie debugowaniu 
+
+
+## Abstract Factory
