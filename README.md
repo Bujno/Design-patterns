@@ -31,3 +31,13 @@ Minusy:
 
 
 ## Abstract Factory
+
+Najpierw powtórzmy sobie definicję <strong>klasy abstrakcyjnej</strong>. Jest to uogulnienie innych klas z której te będą dziedziczyć, czyli taka klasa bazowa. Z klasy abstrakcyjnej możemy jedynie dziedziczyć - nie możemy tworzyć z niej obiektów w sposób bezpośredni. 
+
+<strong>WAŻNE!</strong> Fabryka abstrakcyjna może, ale wcale nie musi być klasą abstrakcyjną
+
+<strong>Farbyka abstrakcyjna</strong> - wzorzec projektowy dostarczający mechanizm tworzenia instancji różnych klas należących do pewnej rodziny. Czyli:
+- Posiadamy rodzinę niemal całkiem innych klas
+- Każda klasa posiada zainicjalizowane te same metody
+- Celem fabryki abstrakcyjnej będzie dostarczenie nam odpowiedniej klasy
+My programniści, użytkownicy fabryki abstrakcyjnej, nie będziemy nawet wiedzieć jaka klasa została zwrócona - nie potrzebujemy tej wiedzy, o ile zostanie dobrana dobra klasa końcowa. Aby zrealizować wzorzec fabryki abstrakcyjnej należy wydzielić logikę wyboru klasy do osobnej klasy, której celem będzie jedynie zwrócenie odpowiedniego typu.
